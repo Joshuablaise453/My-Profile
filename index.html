@@ -6,7 +6,12 @@
   <title>Student Profile</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
-    body { font-family: Calibri, sans-serif; max-width: 700px; margin: 40px auto; padding: 0 1.5rem; color: #222; }
+    body { 
+        background-size: cover;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to top left, rgb(252, 250, 250), rgb(170, 150, 170));
+       max-width: 700px; margin: 40px auto; padding: 0 1.5rem; color: #222;
+  }
 
     .profile-header { display: flex; align-items: flex-start; gap: 2rem; margin-bottom: 2rem; }
     .profile-image {
@@ -25,12 +30,24 @@
 }
 
 
-    .profile-info { display: flex; flex-direction: column; gap: 16px; padding-top: 16px; }
+    .profile-info { 
+        box-shadow: 0 0 5px black;
+      border-radius: 30px 0 0 30px;
+      padding: 15px;
+      background: linear-gradient(to left, rgba(255, 255, 255, 0),rgba(255, 255, 255, 0.747));
+      display: flex; flex-direction: column; gap: 16px; padding-top: 16px; }
     .field { display: flex; align-items: center; gap: 10px; }
     .field label { font-size: 13px; font-weight: 600; min-width: 65px; }
     .field .line { flex: 1; border-bottom: 1px solid #aaa; min-width: 180px; height: 20px; }
 
-    .section-title { font-size: 13px; font-weight: 700; letter-spacing: 0.04em; margin-bottom: 10px; }
+    .section-title { 
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: rgb(206, 104, 8);
+      font-weight: bold;
+      padding: 5px;
+      border-radius: 10px 10px 0 0;
+      color:rgb(7, 6, 6);font-size: 13px; font-weight: 700; letter-spacing: 0.04em; margin-bottom: 10px; 
+    }
 
     table { width: 100%; border-collapse: collapse; font-size: 13px; margin-bottom: 1.5rem; table-layout: fixed; }
     th { background: #d9d9d9; border: 1px solid #999; padding: 7px 10px; text-align: left; font-weight: 600; }
@@ -57,7 +74,6 @@
     <div class="profile-image">
         <img src="Dp.jpg" alt="Profile Image">
     </div>
-            <p>Profile Picture</p>
 
     <div class="profile-info">
       <div class="field"><label>NAME</label>OKELLO JOSHUA BLAISE</div>
@@ -91,6 +107,7 @@
       <li>Reading books</li>
     </ol>
   </div>
+      <p class="section-title"><b>Contact Me</b></p>
 
   <div class="social-links">
 
